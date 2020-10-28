@@ -7,14 +7,7 @@ struct node
     int data;
     struct node *left;
     struct node *right;
-};
-struct node *tree;
-void createtree(struct node *tree);
-struct node *insert(struct node *tree, int val);
-void preorder(struct node *tree);
-void inorder(struct node *tree);
-void postorder(struct node *tree);
-int main()
+)
 {
     int option,val;
 
@@ -70,43 +63,14 @@ struct node *insert(struct node *tree, int val)
         tree->left=NULL;
         tree->right=NULL;
 
-    }
-    else
-    {
-        parentptr=NULL;
-        nodeptr=tree;
-        while(nodeptr!=NULL)
-        {
-            parentptr=nodeptr;
-            if(val<nodeptr->data)
-            nodeptr=nodeptr->left;
-            else
-            nodeptr=nodeptr->right;
+;
 
         }
         if(val<parentptr->data)
             parentptr->left=ptr;
         else
             parentptr->right=ptr;
-    }
-        return tree;
-}
-
-void preorder(struct node *tree)
-{
-    if(tree!=NULL)
-    {
-        printf("%d\t",tree->data);
-        preorder(tree->left);
-        preorder(tree->right);
-    }
-}
-
-void inorder(struct node *tree)
-{
-    if(tree!=NULL)
-    {
-        inorder(tree->left);
+    }\
         printf("%d\t",tree->data);
         inorder(tree->right);
     }
@@ -116,8 +80,5 @@ void postorder(struct node *tree)
 {
     if(tree!=NULL)
     {
-        postorder(tree->left);
-        postorder(tree->right);
-        printf("%d\t",tree->data);
-    }
+        postorder(
 }

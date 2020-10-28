@@ -46,8 +46,8 @@ int main ()
 	{
 		printf("\nEnter your choice : ");
 		scanf("%d",&num);
-		if(num==1){int item;printf("Enter the number you want to push in : ");scanf("%d",&item);push(item);}
-		if(num==2){pop();}
+		if(num==2){int item;printf("Enter the number you want to push in : ");scanf("%d",&item);push(item);}
+		if(num==8){pop();}
 		if(num==3){display();}
 	}while (num!=4);
 	return 0;
